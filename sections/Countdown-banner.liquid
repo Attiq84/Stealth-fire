@@ -1,0 +1,396 @@
+{% liquid
+  assign full_width = section.settings.full_width
+  assign section_height_desktop = section.settings.section_height_desktop
+  assign desktop_image = section.settings.desktop_image
+  assign blur_amount = section.settings.blur_amount
+  assign overlay_color = section.settings.overlay_color
+  assign border_radius = section.settings.border_radius
+  assign background_color = section.settings.background_color
+  assign section_padding = section.settings.section_padding
+%}
+
+<div style="
+  width: {% if full_width %}80%{% else %}auto{% endif %};
+  height: {{ section_height_desktop }}px;
+  background-image: url({{ desktop_image | img_url: 'master' }});
+  background-color: {{ background_color }};
+  padding: {{ section_padding }}px;
+  border-radius: {{ border_radius }}px;
+  text-align: center;
+      background-position: left;
+    background-size: cover;
+  overflow: hidden;
+      margin: auto;
+  color: white;
+">
+
+
+  
+  
+<div class="width-text">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text' %}
+        <div class="text-block">
+          <h1 style="color: {{ block.settings.header_color }}; font-size: {{ block.settings.header_font_size }}px;" class="new-title">
+            {{ block.settings.header }}
+          </h1>
+          <p style="color: {{ block.settings.paragraph_color }}; font-size: {{ block.settings.paragraph_font_size }}px;" class="new-text">
+            {{ block.settings.paragraph }}
+          </p>
+        </div>
+      {% when 'timer' %}
+      <div class="cont-text">
+      <h3 class="new-tit">{{ block.settings.countdown_text }}</h3>
+        
+<div class="countdown" data-date="{{ block.settings.countdown_date | date: '%s' }}" data-text="{{ block.settings.countdown_text }}">
+  <div style="display: block; align-items: center;">
+   <h1 style="display: inline-block; color:#000;   width:50px; padding: 5px;" class="countdown-value js-timer-days"></h1> 
+    <h1 style="display: inline-block; color:#000;   width:50px; padding: 5px;" class="countdown-value js-timer-hours"></h1>
+    <h1 style="display: inline-block; color:#000;   width:50px; padding: 5px;" class="countdown-value js-timer-minutes"></h1>
+    <h1 style="display: inline-block; color:#000;    width:50px; padding: 5px;" class="countdown-value js-timer-seconds"></h1>
+  </div>
+  <div style="display: block; align-items: center;margin-top:-25px;">
+    <p style="display: inline-block; color: #fff; width:50px;" class="countdown-label">days</p>
+    <p style="display: inline-block; color: #fff; width:50px;" class="countdown-label">hours</p>
+    <p style="display: inline-block; color: #fff; width:50px;" class="countdown-label">minutes</p>
+    <p style="display: inline-block; color: #fff; width:50px;" class="countdown-label">seconds</p>
+  </div>
+</div>
+      </div>
+
+      {% when 'button' %}
+        <a href="{{ block.settings.button_url }}" class="button" style="
+          color: {{ block.settings.button_text_color }};
+          background-color: {{ block.settings.button_background_color }};
+          border-radius: {{ block.settings.button_border_radius }}px;
+          border: {{ block.settings.button_border_width }}px solid {{ block.settings.button_border_color }};
+          font-size: {{ block.settings.button_font_size }}px;
+          text-decoration:underline;
+        ">
+          {{ block.settings.button_text }}
+        </a>
+    {% endcase %}
+  {% endfor %}
+  
+</div>
+</div>
+{% schema %}
+{
+  "name": "Countdown Timer",
+  "class": "custom-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "section_height_desktop",
+      "label": "Section height (desktop)",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "default": 500,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_height_mobile",
+      "label": "Section height (mobile)",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "default": 300,
+      "unit": "px"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Image (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "blur_amount",
+      "label": "Image blur",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "countdown timer",
+      "category": "Custom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header text",
+          "default": "Your header text"
+        },
+        {
+          "type": "color",
+          "id": "header_color",
+          "label": "Header color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "header_font_size",
+          "label": "Header font size",
+          "min": 10,
+          "max": 72,
+          "step": 1,
+          "default": 36,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Paragraph text",
+          "default": "Your paragraph text"
+        },
+        {
+          "type": "color",
+          "id": "paragraph_color",
+          "label": "Paragraph color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "paragraph_font_size",
+          "label": "Paragraph font size",
+          "min": 10,
+          "max": 36,
+          "step": 1,
+          "default": 16,
+          "unit": "px"
+        }
+      ]
+    },
+    {
+      "type": "timer",
+      "name": "Timer block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "countdown_date",
+          "label": "Countdown Date",
+          "default": "Dec 31, 2023"
+        },
+        {
+          "type": "text",
+          "id": "countdown_text",
+          "label": "Countdown Text",
+          "default": "Countdown has ended."
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Click me"
+        },
+        {
+          "type": "text",
+          "id": "button_url",
+          "label": "Button URL",
+          "default": "abc"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_background_color",
+          "label": "Button background color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "button_border_radius",
+          "label": "Button border radius",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "button_border_width",
+          "label": "Button border width",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "default": 0,
+          "unit": "px"
+        },
+        {
+          "type": "color",
+          "id": "button_border_color",
+          "label": "Button border color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "button_font_size",
+          "label": "Button font size",
+          "min": 10,
+          "max": 36,
+          "step": 1,
+          "default": 16,
+          "unit": "px"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var countdownElements = document.querySelectorAll('.countdown');
+
+    countdownElements.forEach(function(countdownElement) {
+     var countdownDate = new Date(countdownElement.getAttribute('data-date') * 1000).getTime();
+
+      var countdownText = countdownElement.getAttribute('data-text');
+
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var difference = countdownDate - now;
+
+        if (difference > 0) {
+           var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        countdownElement.querySelector('.js-timer-days').textContent = days;
+    countdownElement.querySelector('.js-timer-hours').textContent = hours;
+    countdownElement.querySelector('.js-timer-minutes').textContent = minutes;
+    countdownElement.querySelector('.js-timer-seconds').textContent = seconds;
+
+        } else {
+          clearInterval(countdownInterval);
+          countdownElement.innerHTML = countdownText;
+        }
+      }
+
+      updateCountdown(); // Initial update
+
+      var countdownInterval = setInterval(updateCountdown, 1000); // Update the countdown every second
+    });
+  });
+</script>
+<style>
+  .width-text {
+    text-align: center;
+    /* padding-left: 60px; */
+    width: 500px;
+    margin:auto;
+}
+  h1.new-title {
+    letter-spacing: 1px;
+    line-height: 0.9em;
+    font-weight: 500;
+}
+  p.new-text {
+    letter-spacing: -0.8px;
+    line-height: 1.2em;
+}
+  .cont-text {
+    display: block;
+}
+  h3.new-tit {
+    font-size: 30px;
+    font-weight: 500;
+}
+  p.countdown-label {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 5px;
+}
+a.button {
+    padding: 10px;
+}
+  .text-block {
+    margin-top: 120px;
+}
+  .countdown-value{
+    background: #fff;
+    border-radius:10px;
+    text-align:center;
+    margin: 20px 5px;
+  }
+  @media only screen and (max-width: 768px) {
+    .width-text {
+    text-align: left;
+    padding: 10px;
+    width: 350px;
+}
+     .cont-text {
+    display: block;
+    margin-bottom: 20px;
+}
+    h3.new-tit {
+    margin-bottom: 0px;
+}
+     .text-block {
+    margin-top: 70px;
+}
+  }
+</style>
+
+
