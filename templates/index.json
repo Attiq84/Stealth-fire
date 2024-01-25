@@ -66,28 +66,6 @@
         "divider": false
       }
     },
-    "4f9e0a21-5c28-438a-93fd-ffbcb45a3a74": {
-      "type": "promo-grid",
-      "blocks": {
-        "66234e99-accf-46b6-82be-0ae725221e7d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/website_banners.jpg",
-            "link": "",
-            "width": "100"
-          }
-        }
-      },
-      "block_order": [
-        "66234e99-accf-46b6-82be-0ae725221e7d"
-      ],
-      "settings": {
-        "full_width": false,
-        "gutter_size": 13,
-        "space_above": true,
-        "space_below": true
-      }
-    },
     "7994a525-8f6b-4566-8412-3a826a315077": {
       "type": "Countdown-banner",
       "blocks": {
@@ -135,7 +113,6 @@
     "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
     "featured_collection_LccLyY",
-    "4f9e0a21-5c28-438a-93fd-ffbcb45a3a74",
     "7994a525-8f6b-4566-8412-3a826a315077"
   ]
 }
