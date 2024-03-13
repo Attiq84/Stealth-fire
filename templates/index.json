@@ -40,11 +40,20 @@
             "title": "FIRE",
             "focal_point": "center center"
           }
+        },
+        "collection_NT9niJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "title": "T-Shirt collection",
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-1",
-        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2"
+        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2",
+        "collection_NT9niJ"
       ],
       "disabled": true,
       "settings": {
