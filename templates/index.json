@@ -54,6 +54,18 @@
         "enable_gutter": false
       }
     },
+    "featured_collection_iHh9Pd": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "T-Shirts collection",
+        "home_featured_products": "t-shirts",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "featured_collection_LccLyY": {
       "type": "featured-collection",
       "settings": {
@@ -123,27 +135,15 @@
         "background_color": "#ffffff",
         "section_padding": 0
       }
-    },
-    "featured_collection_iHh9Pd": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "T-Shirts collection",
-        "home_featured_products": "t-shirts",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
     }
   },
   "order": [
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab",
     "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
+    "featured_collection_iHh9Pd",
     "featured_collection_LccLyY",
     "1706187940fcb950de",
-    "7994a525-8f6b-4566-8412-3a826a315077",
-    "featured_collection_iHh9Pd"
+    "7994a525-8f6b-4566-8412-3a826a315077"
   ]
 }
