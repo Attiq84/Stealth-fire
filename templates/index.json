@@ -1,7 +1,26 @@
 {
   "sections": {
+    "background_image_text_GGGKeE": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/BANNER_SF_WORK.png",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": true
+      }
+    },
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab": {
       "type": "Video",
+      "custom_css": [
+
+      ],
       "settings": {
         "video-ar": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6ade4e62622d4b468bb5e71e33723a81.mp4",
         "title-ar": "",
@@ -138,6 +157,7 @@
     }
   },
   "order": [
+    "background_image_text_GGGKeE",
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab",
     "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
