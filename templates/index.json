@@ -2,6 +2,7 @@
   "sections": {
     "4200949a-073c-44fe-8cf0-5dc624092ed5": {
       "type": "Video-mob",
+      "disabled": true,
       "settings": {
         "video-ar": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/01f58772d3794836afb89968ca23e730.mp4",
         "title-ar": "",
@@ -60,20 +61,11 @@
             "title": "FIRE",
             "focal_point": "center center"
           }
-        },
-        "collection_KUhVXA": {
-          "type": "collection",
-          "settings": {
-            "collection": "pants",
-            "title": "Bottom collection",
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
         "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-1",
-        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2",
-        "collection_KUhVXA"
+        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2"
       ],
       "disabled": true,
       "settings": {
@@ -88,6 +80,18 @@
       "settings": {
         "title": "T-Shirts collection",
         "home_featured_products": "t-shirts",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_collection_GUzkNy": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "bottom collection",
+        "home_featured_products": "pants",
         "per_row": 5,
         "rows": 1,
         "mobile_scrollable": true,
@@ -172,6 +176,7 @@
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
     "featured_collection_iHh9Pd",
+    "featured_collection_GUzkNy",
     "featured_collection_LccLyY",
     "1706187940fcb950de",
     "7994a525-8f6b-4566-8412-3a826a315077"
