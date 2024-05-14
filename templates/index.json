@@ -1,5 +1,15 @@
 {
   "sections": {
+    "4200949a-073c-44fe-8cf0-5dc624092ed5": {
+      "type": "Video-mob",
+      "settings": {
+        "video-ar": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/01f58772d3794836afb89968ca23e730.mp4",
+        "title-ar": "",
+        "description-ar": "",
+        "link": "shopify:\/\/collections\/all",
+        "link_text": "SHOP NOW"
+      }
+    },
     "background_image_text_GGGKeE": {
       "type": "background-image-text",
       "settings": {
@@ -24,16 +34,6 @@
       ],
       "settings": {
         "video-ar": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6ade4e62622d4b468bb5e71e33723a81.mp4",
-        "title-ar": "",
-        "description-ar": "",
-        "link": "shopify:\/\/collections\/all",
-        "link_text": "SHOP NOW"
-      }
-    },
-    "4200949a-073c-44fe-8cf0-5dc624092ed5": {
-      "type": "Video-mob",
-      "settings": {
-        "video-ar": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/01f58772d3794836afb89968ca23e730.mp4",
         "title-ar": "",
         "description-ar": "",
         "link": "shopify:\/\/collections\/all",
@@ -146,9 +146,9 @@
       ],
       "settings": {
         "full_width": false,
-        "section_height_desktop": 480,
+        "section_height_desktop": 320,
         "section_height_mobile": 480,
-        "desktop_image": "shopify:\/\/shop_images\/Sale_banner.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/5_62429dcc-9f56-4911-926e-cbe43ae188c6.jpg",
         "blur_amount": 3,
         "overlay_color": "#000000",
         "border_radius": 0,
@@ -158,9 +158,9 @@
     }
   },
   "order": [
+    "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "background_image_text_GGGKeE",
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab",
-    "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
     "featured_collection_iHh9Pd",
     "featured_collection_LccLyY",
