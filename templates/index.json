@@ -60,11 +60,20 @@
             "title": "FIRE",
             "focal_point": "center center"
           }
+        },
+        "collection_KUhVXA": {
+          "type": "collection",
+          "settings": {
+            "collection": "pants",
+            "title": "Bottom collection",
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
         "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-1",
-        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2"
+        "template--21110177562942__419364e5-c29d-43e8-b102-6e6c0b0471f8-collection-2",
+        "collection_KUhVXA"
       ],
       "disabled": true,
       "settings": {
