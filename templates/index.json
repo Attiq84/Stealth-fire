@@ -89,6 +89,7 @@
     },
     "featured_collection_iHh9Pd": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "fire activewear women collection",
         "home_featured_products": "shop-women-activewear",
