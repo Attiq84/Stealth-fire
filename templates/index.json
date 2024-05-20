@@ -111,6 +111,57 @@
         "divider": false
       }
     },
+    "featured_product_mKWkhj": {
+      "type": "featured-product",
+      "blocks": {
+        "price_cXGMPP": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description_HptpgD": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "variant_picker_pQ3iNE": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart": "",
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "buy_buttons_M8nkRj": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "price_cXGMPP",
+        "description_HptpgD",
+        "variant_picker_pQ3iNE",
+        "buy_buttons_M8nkRj"
+      ],
+      "settings": {
+        "featured_product": "double-layer-skirt",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "small",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
     "featured_collection_LccLyY": {
       "type": "featured-collection",
       "settings": {
@@ -190,6 +241,7 @@
     "featured_collection_mhkg4L",
     "featured_collection_iHh9Pd",
     "featured_collection_GUzkNy",
+    "featured_product_mKWkhj",
     "featured_collection_LccLyY",
     "7994a525-8f6b-4566-8412-3a826a315077",
     "1706187940fcb950de"
