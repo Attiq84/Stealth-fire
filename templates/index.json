@@ -78,8 +78,8 @@
     "featured_collection_mhkg4L": {
       "type": "featured-collection",
       "settings": {
-        "title": "Fire activewear men collection",
-        "home_featured_products": "shop-men-1",
+        "title": "men T shirt collection",
+        "home_featured_products": "t-shirts",
         "per_row": 5,
         "rows": 3,
         "mobile_scrollable": true,
