@@ -89,6 +89,7 @@
         "blocks": {
           "a6418fec-e110-417d-bc7e-5d2e4cd5d8b6": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free shipping when you order more than 3000 pkr",
               "link_text": "",
