@@ -114,7 +114,7 @@
     "featured_collection_39HbNU": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "women leggings",
         "home_featured_products": "legging",
         "per_row": 5,
         "rows": 1,
@@ -133,6 +133,7 @@
         },
         "description_HptpgD": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "is_tab": false
           }
