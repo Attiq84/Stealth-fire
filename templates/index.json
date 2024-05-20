@@ -111,6 +111,18 @@
         "divider": false
       }
     },
+    "featured_collection_39HbNU": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "legging",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "featured_product_mKWkhj": {
       "type": "featured-product",
       "blocks": {
@@ -241,6 +253,7 @@
     "featured_collection_mhkg4L",
     "featured_collection_iHh9Pd",
     "featured_collection_GUzkNy",
+    "featured_collection_39HbNU",
     "featured_product_mKWkhj",
     "featured_collection_LccLyY",
     "7994a525-8f6b-4566-8412-3a826a315077",
