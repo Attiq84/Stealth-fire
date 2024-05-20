@@ -90,8 +90,8 @@
     "featured_collection_iHh9Pd": {
       "type": "featured-collection",
       "settings": {
-        "title": "fire activewear women collection",
-        "home_featured_products": "shop-women-activewear",
+        "title": "women top collection",
+        "home_featured_products": "women-activewear-tops",
         "per_row": 5,
         "rows": 3,
         "mobile_scrollable": true,
