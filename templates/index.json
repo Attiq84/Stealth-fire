@@ -52,20 +52,20 @@
             "focal_point": "center center"
           }
         },
-        "collection_Bdt3nK": {
-          "type": "collection",
-          "settings": {
-            "collection": "shop-men-1",
-            "title": "men active wear",
-            "focal_point": "center center"
-          }
-        },
         "collection_nGW973": {
           "type": "collection",
           "disabled": true,
           "settings": {
             "collection": "",
             "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_Bdt3nK": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-men-1",
+            "title": "men active wear",
             "focal_point": "center center"
           }
         },
@@ -81,8 +81,8 @@
       },
       "block_order": [
         "collection_dHKgUt",
-        "collection_Bdt3nK",
         "collection_nGW973",
+        "collection_Bdt3nK",
         "collection_g6WJri"
       ],
       "settings": {
