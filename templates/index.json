@@ -41,6 +41,57 @@
         "link_text": "SHOP NOW"
       }
     },
+    "featured_collections_XdNkQ6": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_dHKgUt": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-women-activewear",
+            "title": "women active wear",
+            "focal_point": "center center"
+          }
+        },
+        "collection_Bdt3nK": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-men-1",
+            "title": "men active wear",
+            "focal_point": "center center"
+          }
+        },
+        "collection_nGW973": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "collection_g6WJri": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_dHKgUt",
+        "collection_Bdt3nK",
+        "collection_nGW973",
+        "collection_g6WJri"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "divider": true,
+        "per_row": 3,
+        "enable_gutter": true
+      }
+    },
     "419364e5-c29d-43e8-b102-6e6c0b0471f8": {
       "type": "featured-collections",
       "blocks": {
@@ -69,7 +120,7 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "",
+        "title": "FIRE ACTIVEWEAR",
         "divider": false,
         "per_row": 2,
         "enable_gutter": false
@@ -250,6 +301,7 @@
     "4200949a-073c-44fe-8cf0-5dc624092ed5",
     "background_image_text_GGGKeE",
     "e7ab985b-c9bc-48a2-9ba1-e369677045ab",
+    "featured_collections_XdNkQ6",
     "419364e5-c29d-43e8-b102-6e6c0b0471f8",
     "featured_collection_mhkg4L",
     "featured_collection_iHh9Pd",
